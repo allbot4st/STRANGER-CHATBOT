@@ -126,7 +126,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 pass
     except ChatAdminRequired:
         print(f"Promote me as an admin in the UPDATE CHANNEL  : {UPDATE_CHNL} !")
-@Mukesh.on_message(filters.command(["op",f"start@{BOT_USERNAME}"]))
+@Mukesh.on_message(filters.command(["𝗌𝗍𝖺𝗋𝗍",f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
         accha = await m.reply_text(
                         text = f"{g}")
@@ -148,7 +148,7 @@ async def restart(client, m: Message):
         )
 @Mukesh.on_callback_query()
 async def cb_handler(Client, query: CallbackQuery):
-    if query.data == "oye":
+    if query.data == "𝖧𝖤𝖫𝖯":
      await query.message.edit_text(
                       text = HELP_READ,
                       reply_markup = InlineKeyboardMarkup(HELP_BACK),
